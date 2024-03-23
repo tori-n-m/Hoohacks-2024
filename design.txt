@@ -1,0 +1,7 @@
+We will create a website that encourages young students to learn in an interactive, engaging way for the young brain. Children at this age feel more inclined to learn if they can use their creative side and have fun while doing so. Most education systems, both in-person and online fail at this, so our website will help children actually enjoy learning instead of sticking to outdated, non-engaging schooling.
+
+Our website will:
+
+1. Teach students from grades K-6 their core subjects: English, Math, Science, and History
+2. Do so in a way that stimulates a child's mind and engagement, such as: Interactive activities, visualization of otherwise "boring" topics, references to popular kid's media and shows, and encouraging creativity through these subjects not only memorization, use the "gamification" learning method, such as giving fake currency to the user for completing modules and letting the user spend this currency on the "shop" (buying special avatars, custom themes for the website, "pets", etc)
+3. Use 100% Python and Django to create the website
