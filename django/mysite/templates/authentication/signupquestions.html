@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        <strong>Message:</strong> {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    </div>
+    {% endfor %}
+
+    <h3>We're going to ask you a few questions to get to know you and to personalize your learning experience</h3>
+    <form method="post" action="/signupquestions">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="grade">Username</label>
+            <input type="text" class="form-control" id="grade" name="grade" placeholder="What grade are you in?" Required>
+        </div>
+        <div class="form-group">
+            <label for="favsubj">First Name</label>
+            <input type="text" class="form-control" id="favsubj" name="favsubj" placeholder="What's your favorite subject?" Required>
+        </div>
+        <div class="form-group">
+            <label for="learnstyle">Last Name</label>
+            <input type="text" class="form-control" id="learnstyle" name="learnstyle" placeholder="What's your learning style?" Required>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+</body>
+</html>
